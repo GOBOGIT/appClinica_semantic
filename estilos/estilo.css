@@ -1,0 +1,32 @@
+#contenido {
+    margin-top:-50px;
+}
+
+#portada {
+    height:400px;
+    background-color: rgb(153, 255, 204);
+    color: white;
+}
+
+#opciones {
+       margin-left: 15px!important;
+    margin-right: 15px !important;
+}
+
+#cabecera {
+
+    margin-top: 100px;
+}
+
+.menu {
+
+}
+
+.grid {
+
+}
+
+#footer {
+
+    height: 200px;
+}
