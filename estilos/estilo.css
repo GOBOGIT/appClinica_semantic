@@ -3,14 +3,20 @@
 }
 
 #portada {
-    height:400px;
+    height:350px;
     background-color: rgb(153, 255, 204);
     color: white;
 }
 
+#menuPantallas {
+    background-color: rgb(153, 225, 204);
+    margin:0px;   
+    
+}
+
 #opciones {
-       margin-left: 15px!important;
-    margin-right: 15px !important;
+       margin-left: 20px!important;
+    margin-right: 20px !important;
 }
 
 #cabecera {
@@ -26,7 +32,11 @@
 
 }
 
-#footer {
 
-    height: 200px;
+#footer {
+    margin-top:100px;
 }
+#footer .column {
+    padding:20px;
+}
+
