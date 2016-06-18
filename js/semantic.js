@@ -10,4 +10,11 @@ $('.ui.dropdown')
       .dropdown('clear')
     ;
   });
+
+$('.ui.sticky')
+  .sticky({
+    context: '#contenido'
+  });
+
+
 });
