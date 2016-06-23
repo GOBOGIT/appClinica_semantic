@@ -11,32 +11,37 @@
         <script src="js/semantic.js"></script>
     </head>
     <body>
-        <!-- menu -->
-        <div class="ui top fixed text menu wide" >
-            <a class="item">Browse</a>
-            <a class="item">Submit</a>
-            <div class="right menu">
-                <div class="item">
-                    <div class="ui massive button">Iniciar sesión</div>
-                </div>
-            </div>
-        </div>
-        <!-- cabecera -->
+        <!-- contenido -->
          <div id="contenido" class="ui grid">
-            <div id="portada" class=" ui sixteen wide column">
-                <h1 id="cabecera" class="ui center aligned icon header">
+             <!-- cabecera -->
+            <div id="portadaSmall" class=" ui sixteen wide column ">
+                <!-- menu -->
+                    <div id="menuSup" class="ui text menu wide" >
+                        <div class="right menu">
+                                <div class="ui button">Iniciar sesión</div>
+                        </div>
+                    </div>
+                <h1 id="cabeceraSmall" class="ui center aligned icon header">
                     <i class="circular icon"></i>
             </div>
+<<<<<<< HEAD:busqueda.html
         <div id="menuPantallas" class="ui one item secondary pointing menu wide stackable">
             <a href="index.html" class="item">Inicio</a>
             <a class="item active">Estudios</a>
             <a class="item"> Clínicas</a>
             <a class="item"> Avisos</a>
         </div>
+=======
+            <div id="menuPantallas" class="ui one item secondary pointing menu stackable sticky">
+                <a href="index.html" class="item">Inicio</a>
+                <a href="estudios.html" class="item active">Estudios</a>
+                <a href="clinicas.html" class="item">Clínicas</a>
+                <a class="item"> Avisos</a>
+            </div>
+>>>>>>> 7a057fcdc3584e53fc599102c7ea582267a7cc40:estudios.html
         <!-- menú busqueda -->
-        <div class="ui one item text menu wide filtros stackable">
+        <div class="ui one item text menu wide filtros stackable computer tablet only row">
             <div class="item">
-         
                 <div class="ui multiple selection dropdown">
                     <input name="gender" value="" type="hidden">
                     <i class="dropdown icon"></i>
@@ -79,19 +84,24 @@
         <!-- lista dummie -->
         <div  class=" ui eleven wide centered column">
             <div class="ui divided link items">
+                <!-- item -->
                 <div class="item">
                     <div class="ui tiny image">
                         <img src="imagenes/500x500.png">
                     </div>
                     <div class="content">  
                         <div class="header">
-                        Content A
+                        <a href="estudio.html"> Content A</a>
                         </div>
                         <div class="description">
                             <p>descripción</p>
                         </div>
+                        <div class="ui right floated">
+                            <i class="like icon"></i>
+       	                </div>
                  </div>
                 </div>
+                <!-- fin item -->
                 <div class="item">
                     <div class="ui tiny image">
                     <img src="imagenes/500x500.png">
@@ -150,9 +160,7 @@
                 </div>
                 </div>
         </div>
-
-
-        
+        <!-- footer -->
         <div class="ui horizontal divider"></div>
         <div id="footer" class="grey sixteen wide column">
             <div class="ui three column grid">
@@ -177,11 +185,7 @@
                 </div>
             </div>
              <div class="ui horizontal divider"></div>
-            
-            
         </div>
     </div>
     </body>
-
 </html>
-
