@@ -10,4 +10,11 @@ $('.ui.dropdown')
       .dropdown('clear')
     ;
   });
+
+
+$('.visible.datos .ui.sidebar')
+  .sidebar({
+    context: '.visible.datos .bottom.segment'
+  }).sidebar('hide');
+
 });

@@ -4,36 +4,31 @@
         <meta charset="utf-8" />
         <title>titulo pagina</title>
         <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href="estilos/estilo.css"> 
-         <script src="http://code.jquery.com/jquery-latest.js"></script>       
+        <link rel="stylesheet" type="text/css" href="estilos/estilosPC.css"> 
+         <script src="js/jquery.js"></script>       
         <script src="semantic/dist/semantic.min.js"></script>
-
         <script src="js/semantic.js"></script>
     </head>
     <body>
         <!-- menu -->
         <div class="ui top fixed text menu wide" >
-            <a class="item">Browse</a>
-            <a class="item">Submit</a>
+            Panel de Control APP
             <div class="right menu">
                 <div class="item">
-                    <div class="ui massive button">Iniciar sesión</div>
+                    <div class="ui red massive button">Cerrar sesión</div>
                 </div>
             </div>
         </div>
         <!-- cabecera -->
          <div id="contenido" class="ui grid">
             <div id="portada" class=" ui sixteen wide column">
-                <h1 id="cabecera" class="ui center aligned icon header">
-                    <i class="circular icon"></i>
+                <h1 id="cabeceraPC" class="ui center aligned icon header">
             </div>
-        <div id="menuPantallas" class="ui one item secondary pointing menu wide stackable">
-            <a href="index.html" class="item">Inicio</a>
+        <div id="menuPantallas" class="ui one item inverted secondary pointing menu wide stackable">
             <a class="item active">Estudios</a>
             <a class="item"> Clínicas</a>
-            <a class="item"> Avisos</a>
-        </div>
-        <!-- menú busqueda -->
+            <a class="item">Avisos</a>
+        </div>       <!-- menú busqueda -->
         <div class="ui one item text menu wide filtros stackable">
             <div class="item">
          
@@ -75,14 +70,19 @@
             </div>
             
         </div>
-        <div class="ui horizontal divider"></div>
+        <!-- contenido -->
+        
+        <div class="ui top attached segment pushable" >
         <!-- lista dummie -->
-        <div  class=" ui eleven wide centered column">
+        <div class="ui visible datos left inline vertical very wide sidebar ">
+          <div class="">
+            <h3>Estudios en la Base de Datos</h3>
+          </div>
+          <div class="ui divider">
+          </div>
             <div class="ui divided link items">
                 <div class="item">
-                    <div class="ui tiny image">
-                        <img src="imagenes/500x500.png">
-                    </div>
+
                     <div class="content">  
                         <div class="header">
                         Content A
@@ -93,17 +93,16 @@
                  </div>
                 </div>
                 <div class="item">
-                    <div class="ui tiny image">
-                    <img src="imagenes/500x500.png">
-                    </div>
                     <div class="middle aligned content">
                     Content B
                     </div>
                 </div>
                 <div class="item">
-                    <div class="ui tiny image">
-                    <img src="imagenes/500x500.png">
+                    <div class="middle aligned content">
+                    Content C
                     </div>
+                </div>
+                <div class="item">
                     <div class="middle aligned content">
                     Content C
                     </div>
@@ -140,45 +139,76 @@
                     Content C
                     </div>
                 </div>
-                <div class="item">
-                    <div class="ui tiny image">
-                    <img src="imagenes/500x500.png">
-                    </div>
-                    <div class="middle aligned content">
-                    Content C
-                    </div>
-                </div>
-                </div>
+              </div>
         </div>
-
-
-        
-        <div class="ui horizontal divider"></div>
-        <div id="footer" class="grey sixteen wide column">
-            <div class="ui three column grid">
-                <div class="column">
-                    <div class="ui list">
-                        <div class="item">Inicio</div>
-                        <div class="item">Estudios Clínicos</div>
-                        <div class="item">Clínicas</div>
-                        <div class="item">Avisos</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui list">
-                        <div class="item">Contacto</div>
-                        <div class="item">Dirección 1</div>
-                        <div class="item">Dirección 2</div>
-                        <div class="item">teléfono</div>
-                    </div>
-                </div>
-                <div class="column">
-                    formulario
-                </div>
+        <!-- formularios de edición -->
+        <div class="ui pusher datosForm">
+            <div class="ui grid">
+                <div class="ui seven wide column">
+                    <h2>Datos generales</h2>
+                    <div class="ui  divider"></div>
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Nombre del estudio</label>
+                            <input name="first-name" placeholder="First Name" type="text">
+                        </div>
+                        <div class="field">
+                            <label>Información</label>
+                            <textarea></textarea>
+                        </div>
+                        <div class="field">
+                            <label>Requisitos</label>
+                            <textarea></textarea>
+                        </div>
+                          <h4 class="ui dividing header">Fecha de valided</h4>
+                          <div class=" two fields">
+                            <div class=" field">
+                                <label>Fecha inicio</label>
+                                <input type="date" name="validoDesde" placeholder="dd/mm/yyyy">
+                            </div>
+                          <div class=" field">
+                                <label>Fecha fin</label>
+                                <input type="date" name="validoDesde" placeholder="dd/mm/yyyy">
+                            </div>
+                          </div>
+                    </form>
+               </div>
+                <div class="ui five wide column">
+                    <h2>Precio y filtros</h2>
+                    <div class="ui  divider"></div> 
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Precio</label>
+                            <input name="first-name" placeholder="First Name" type="text">
+                        </div>
+                        <div class=" two fields">
+                            <div class="inline field">
+                                <div class="ui toggle checkbox">
+                                    <label>Estudio en promoción</label>
+                                    <input class="hidden" tabindex="0" type="checkbox">
+                                </div>
+                            </div>
+                        <div class="inline field">
+                                <label>Fecha fin</label>
+                                <input type="date" name="validoDesde" placeholder="dd/mm/yyyy">
+                        
+                        
+                        </div>
+                        </div>
+ 
+                    </form>
+                </div>       
             </div>
-             <div class="ui horizontal divider"></div>
+            <div class="ui grid">
+                <div class="ui red column">
+            barra boton confirmar
+                </div>
             
-            
+            </div>
+        </div>
+        </div>
+        <div id="footer" class="grey sixteen wide column">
+            Footer panel de control
         </div>
     </div>
     </body>
