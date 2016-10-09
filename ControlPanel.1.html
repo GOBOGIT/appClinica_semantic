@@ -24,60 +24,65 @@
             <div id="portada" class=" ui sixteen wide column">
                 <h1 id="cabeceraPC" class="ui center aligned icon header">
             </div>
-            <div id="menuPantallas" class="ui one item inverted secondary pointing menu wide stackable">
-                <a class="item active">Estudios</a>
-                <a class="item"> Clínicas</a>
-                <a class="item">Avisos</a>
-                </div>
-            <!-- menú busqueda -->
-            <div class="ui one item text menu wide stackable" id="filtros">
-                <div class="ui item">
-                    <div class="ui multiple selection dropdown">
-                        <input name="gender" value="" type="hidden">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">Por sexo</div>
-                        <div class="menu">
-                            <div class="item" data-value="0">Hombre</div>
-                            <div class="item" data-value="1">Mujer</div>
-                        </div>
-                    </div>
-                    <div class="ui selection dropdown">
-                        <input name="gender" type="hidden">
-                        <div class="default text">Por  tipo</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <div class="item" data-value="0">Embarazo</div>
-                            <div class="item" data-value="2">Estudios clínicos</div>
-                            <div class="item" data-value="3">Ultrasonidos</div>
-                            <div class="item" data-value="4">Tomografías</div>
-                            <div class="item" data-value="5">Resonancia</div>
-                            <div class="item" data-value="1">Químicas</div>
-                        </div>
-                    </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="ui button">
-                    Limpiar filtros
-                    </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="ui search">
-                        <div class="ui icon input">
-                            <input class="prompt" placeholder="Bùsqueda manual..." type="text">
-                            <i class="search icon"></i>
-                        </div>
-                        <div class="results"></div>
+        <div id="menuPantallas" class="ui one item inverted secondary pointing menu wide stackable">
+            <a class="item active">Estudios</a>
+            <a class="item"> Clínicas</a>
+            <a class="item">Avisos</a>
+        </div>       <!-- menú busqueda -->
+        <div class="ui one item text menu wide filtros stackable">
+            <div class="item">
+         
+                <div class="ui multiple selection dropdown">
+                    <input name="gender" value="" type="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Por sexo</div>
+                    <div class="menu">
+                        <div class="item" data-value="0">Hombre</div>
+                        <div class="item" data-value="1">Mujer</div>
                     </div>
                 </div>
-           </div>
+            
+                <div class="ui selection dropdown">
+                    <input name="gender" type="hidden">
+                    <div class="default text">Por  tipo</div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" data-value="0">Embarazo</div>
+                        <div class="item" data-value="2">Estudios clínicos</div>
+                        <div class="item" data-value="3">Ultrasonidos</div>
+                        <div class="item" data-value="4">Tomografías</div>
+                        <div class="item" data-value="5">Resonancia</div>
+                        <div class="item" data-value="1">Químicas</div>
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="ui button">
+                Limpiar filtros
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="ui search">
+                    <div class="ui icon input">
+                        <input class="prompt" placeholder="Bùsqueda manual..." type="text">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+            
+        </div>
         <!-- contenido -->
-        <div class="ui sixteen wide column" >
-            <div class="ui three column grid stackable">
-                <!-- lista dummie -->
-                <div class="white four wide column" >
-                        <h2>Estudios publicados</h2>
-                <div class="ui  divider"></div>
-                <!-- lista dummie -->
-                <div class="ui divided link items"  id="contenidoForm">
+        
+        <div class="ui top attached segment pushable" >
+        <!-- lista dummie -->
+        <div class="ui  datos left inline vertical wide sidebar ">
+          <div class="">
+            <h3>Estudios en la Base de Datos</h3>
+          </div>
+          <div class="ui divider">
+          </div>
+            <div class="ui divided link items">
                 <div class="item">
+
                     <div class="content">  
                         <div class="header">
                         Content A
@@ -134,28 +139,13 @@
                     Content C
                     </div>
                 </div>
-                <div class="item">
-                    <div class="ui tiny image">
-                    <img src="imagenes/500x500.png">
-                    </div>
-                    <div class="middle aligned content">
-                    Content C
-                    </div>
-                </div>
-  
-                <div class="item">
-                    <div class="ui tiny image">
-                    <img src="imagenes/500x500.png">
-                    </div>
-                    <div class="middle aligned content">
-                    Content fin
-                    </div>
-                </div>
               </div>
-
-                </div>
-                <!-- formularios de edición -->
-                <div class="white six wide column">
+        </div>
+        <!-- formularios de edición -->
+        <div class="ui pusher datosForm">
+            <div class="ui two column grid mn stackable ">
+                <!-- Datos generales -->
+                <div class="seven wide column">
                     <h2>Datos generales</h2>
                     <div class="ui  divider"></div>
                     <form class="ui form">
@@ -183,7 +173,8 @@
                             </div>
                           </div>
                     </form>
-                </div>
+               </div>
+               <!-- precios y filtros -->
                 <div class="six wide column">
                     <h2>Precio y filtros</h2>
                     <div class="ui  divider"></div> 
@@ -192,35 +183,32 @@
                             <label>Precio</label>
                             <input name="first-name" placeholder="First Name" type="text">
                         </div>
-                        <div class="ui segment" style="background-color:gray;padding:20px">
-                        <div class="ui form">
-                            <div class="inline field" >
+                        <div class=" two fields">
+                            <div class="inline field">
                                 <div class="ui toggle checkbox">
                                     <label>Estudio en promoción</label>
                                     <input class="hidden" tabindex="0" type="checkbox">
                                 </div>
                             </div>
-                        <div class="disabled field ">
-                                <label>Precio en promoción</label>
+                        <div class="inline field">
+                                <label>Fecha fin</label>
                                 <input type="date" name="validoDesde" placeholder="dd/mm/yyyy">
-                        </div>
-  
-                        <div class="disabled field ">
-                                <label>Fecha fin de promoción</label>
-                                <input type="date" name="validoDesde" placeholder="dd/mm/yyyy">
+                        
+                        
                         </div>
                         </div>
-                        </div>
-                   </form>
+ 
+                    </form>
+                </div>       
+            </div>
+            <div class="ui grid">
+                <div class="ui red column">
+            barra boton confirmar
                 </div>
+            
             </div>
         </div>
-        <div id="botonesAccion" class="right aligned sixteen wide column">
-                <div class="ui blue button">Nuevo registro</div>
-                <div class="ui red button">Eliminar registro</div>
-                <div class="ui green button right attached">Guardar cambios</div>
-          </div>
-       
+        </div>
         <div id="footer" class="grey sixteen wide column">
             Footer panel de control
         </div>

@@ -2,12 +2,16 @@ html, body {
     background-color: rgb(240,240,240);
 }
 
+h2 {
+    margin-left:20px;
+}
+
 #contenido {
     margin-top:-50px;
 }
 
 #portada {
-    height:150px;
+    height:100px;
     background-color: rgb(30,130,230);
     color: white;
 }
@@ -18,23 +22,45 @@ html, body {
     
 }
 
-
-.contenidoForm {
-    margin:  20px;
+#filtros {
+    padding:20px;
+  background-color: rgb(220,220,220);
 }
 
-.datosForm {
-    background-color: rgb(240,240,240) !important;
+#contenidoForm {
+    background-color: white;
+    padding:  20px !important;
+    overflow-y: scroll;
+overflow-x: hidden;
+height: 650px;
+
+}
+
+.menu {
+    margin:0px !important;
+}
+
+form  {
+  
     padding:20px;
 
+}
+
+.ui.card {
+    margin: 20px;
 }
 
 .datos {
     padding: 40px;
 }
 
+#botonesAccion {
+    background-color: rgb(220,220,220);
+    margin:0px;
+    padding-right:20px;
+}
 
-#footer .column {
+#footer  {
     padding:20px;
 }
 
